@@ -57,13 +57,22 @@ public class UserController {
 		log.info("User name set with {}", createUserRequest.getUsername());
 		cartRepository.save(cart);
 		user.setCart(cart);
-		if(createUserRequest.getPassword().length() < 7 || !createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword())) {
-			log.error("Error with user password. Cannot create user {}", createUserRequest.getUsername());
+		if(createUserRequest.getPassword().length() < 7) {
+			log.error("Error with creating user {}: Password must be 7 characters or greater!", createUserRequest.getUsername());
+			return ResponseEntity.badRequest().build();
 		}
-		user.setPassword(bCryptPasswordEncoder.encode(createUserRequest.getPassword()));
+
+		else if(!createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword())) {
+			log.error("Error with creating user {}: 'Password' and 'Confirm Password field don't match!",createUserRequest.getUsername());
+			return ResponseEntity.badRequest().build();
+		}
+
+		else {
+			user.setPassword(bCryptPasswordEncoder.encode(createUserRequest.getPassword()));
+		}
 
 		userRepository.save(user);
+		log.info("User {} created successfully!", createUserRequest.getUsername());
 		return ResponseEntity.ok(user);
 	}
-	
 }

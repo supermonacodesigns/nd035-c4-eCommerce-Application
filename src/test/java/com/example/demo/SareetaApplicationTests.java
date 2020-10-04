@@ -11,5 +11,9 @@ import java.lang.reflect.Field;
 @SpringBootTest
 public class SareetaApplicationTests {
 
+    @Test
+    public void contextLoads() {
+
+    }
 
 }
