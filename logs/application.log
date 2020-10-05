@@ -1,0 +1,81 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Users/ste_c/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Users/ste_c/.m2/repository/org/slf4j/slf4j-log4j12/1.7.25/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+2020-10-05 12:08:04.642  INFO 4028 --- [           main] com.example.demo.SareetaApplication      : Starting SareetaApplication on DESKTOP-B45RR6J with PID 4028 (started by ste_c in D:\Documents\10 - Programming\Java\Java Web Developer\5 Security and DevOps\Project - eCommerce Application)
+2020-10-05 12:08:04.647  INFO 4028 --- [           main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2020-10-05 12:08:05.585  INFO 4028 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-05 12:08:05.677  INFO 4028 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82ms. Found 4 repository interfaces.
+2020-10-05 12:08:06.277  INFO 4028 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b06b2887] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-05 12:08:07.016  INFO 4028 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-05 12:08:07.049  INFO 4028 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-05 12:08:07.049  INFO 4028 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-05 12:08:07.207  INFO 4028 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-05 12:08:07.208  INFO 4028 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2413 ms
+2020-10-05 12:08:07.381  INFO 4028 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-05 12:08:07.553  INFO 4028 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-05 12:08:07.606  INFO 4028 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-05 12:08:07.684  INFO 4028 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-10-05 12:08:07.685  INFO 4028 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-10-05 12:08:07.835  INFO 4028 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-05 12:08:08.011  INFO 4028 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-05 12:08:08.944  INFO 4028 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-05 12:08:09.724  WARN 4028 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-05 12:08:09.836  INFO 4028 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f949f14b, org.springframework.security.web.context.SecurityContextPersistenceFilter@741105, org.springframework.security.web.header.HeaderWriterFilter@48abd9c0, org.springframework.web.filter.CorsFilter@2fc93425, org.springframework.security.web.authentication.logout.LogoutFilter@f34099c7, com.example.demo.security.JWTAuthenticationFilter@81c255e4, com.example.demo.security.JWTAuthenticationVerificationFilter@634bf376, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f5bdaf18, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@dda8d061, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f6464b55, org.springframework.security.web.session.SessionManagementFilter@19941315, org.springframework.security.web.access.ExceptionTranslationFilter@92c78d03, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@fade0d73]
+2020-10-05 12:08:09.990  INFO 4028 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-05 12:08:10.205  INFO 4028 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-05 12:08:10.207  INFO 4028 --- [           main] com.example.demo.SareetaApplication      : Started SareetaApplication in 6.29 seconds (JVM running for 6.793)
+2020-10-05 12:08:20.281  INFO 4028 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-05 12:08:20.282  INFO 4028 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-05 12:08:20.292  INFO 4028 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-10-05 12:08:20.428  INFO 4028 --- [nio-8080-exec-2] c.e.demo.controllers.UserController      : Creating user Paul
+2020-10-05 12:08:20.428  INFO 4028 --- [nio-8080-exec-2] c.e.demo.controllers.UserController      : User name set with Paul
+2020-10-05 12:08:20.640  INFO 4028 --- [nio-8080-exec-2] c.e.demo.controllers.UserController      : User Paul created successfully!
+2020-10-05 12:08:29.012  INFO 4028 --- [nio-8080-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-10-05 12:08:37.180  INFO 4028 --- [nio-8080-exec-4] c.e.demo.controllers.CartController      : Adding to Paul's cart
+2020-10-05 12:08:37.215  INFO 4028 --- [nio-8080-exec-4] c.e.demo.controllers.CartController      : Items added to Paul's cart successfully!
+2020-10-05 12:08:47.711  INFO 4028 --- [nio-8080-exec-5] c.e.demo.controllers.CartController      : Adding to Paul's cart
+2020-10-05 12:08:47.726  INFO 4028 --- [nio-8080-exec-5] c.e.demo.controllers.CartController      : Items added to Paul's cart successfully!
+2020-10-05 12:09:01.226  INFO 4028 --- [nio-8080-exec-6] c.e.demo.controllers.CartController      : Removing items from Paul's cart
+2020-10-05 12:09:01.242  INFO 4028 --- [nio-8080-exec-6] c.e.demo.controllers.CartController      : Item 1 and quantity 2 removed from cart successfully!
+2020-10-05 12:09:15.428  INFO 4028 --- [nio-8080-exec-7] c.e.demo.controllers.OrderController     : Submitting order for Paul
+2020-10-05 12:09:15.446  INFO 4028 --- [nio-8080-exec-7] c.e.demo.controllers.OrderController     : Order for Paul submitted successfully!
+2020-10-05 12:09:38.039  INFO 4028 --- [nio-8080-exec-8] c.e.demo.controllers.OrderController     : Getting order history for Jon
+2020-10-05 12:09:38.042 ERROR 4028 --- [nio-8080-exec-8] c.e.demo.controllers.OrderController     : Order History Error: Unable to find user Jon
+2020-10-05 12:09:44.454  INFO 4028 --- [nio-8080-exec-9] c.e.demo.controllers.OrderController     : Getting order history for Jane
+2020-10-05 12:09:44.456 ERROR 4028 --- [nio-8080-exec-9] c.e.demo.controllers.OrderController     : Order History Error: Unable to find user Jane
+2020-10-05 12:09:50.089  INFO 4028 --- [io-8080-exec-10] c.e.demo.controllers.OrderController     : Getting order history for Paul
+2020-10-05 12:09:50.094  INFO 4028 --- [io-8080-exec-10] c.e.demo.controllers.OrderController     : Order history for Paul created.
+2020-10-05 12:10:38.539  INFO 4028 --- [nio-8080-exec-4] c.e.demo.controllers.UserController      : Creating user Peter
+2020-10-05 12:10:38.539  INFO 4028 --- [nio-8080-exec-4] c.e.demo.controllers.UserController      : User name set with Peter
+2020-10-05 12:10:38.544 ERROR 4028 --- [nio-8080-exec-4] c.e.demo.controllers.UserController      : Error with creating user Peter: Password must be 7 characters or greater!
+2020-10-05 12:10:49.909  INFO 4028 --- [nio-8080-exec-6] c.e.demo.controllers.UserController      : Creating user Peter
+2020-10-05 12:10:49.910  INFO 4028 --- [nio-8080-exec-6] c.e.demo.controllers.UserController      : User name set with Peter
+2020-10-05 12:10:49.912 ERROR 4028 --- [nio-8080-exec-6] c.e.demo.controllers.UserController      : Error with creating user Peter: 'Password' and 'Confirm Password' fields don't match!
+2020-10-05 12:10:57.939  INFO 4028 --- [nio-8080-exec-7] c.e.demo.controllers.UserController      : Creating user Peter
+2020-10-05 12:10:57.939  INFO 4028 --- [nio-8080-exec-7] c.e.demo.controllers.UserController      : User name set with Peter
+2020-10-05 12:10:58.053  INFO 4028 --- [nio-8080-exec-7] c.e.demo.controllers.UserController      : User Peter created successfully!
+2020-10-05 12:11:28.761  INFO 4028 --- [io-8080-exec-10] c.e.demo.controllers.CartController      : Adding to Peter's cart
+2020-10-05 12:11:28.766 ERROR 4028 --- [io-8080-exec-10] c.e.demo.controllers.CartController      : AddToCart Error! Item 20 not found.
+2020-10-05 12:11:43.993  INFO 4028 --- [nio-8080-exec-1] c.e.demo.controllers.CartController      : Adding to Peter's cart
+2020-10-05 12:11:44.010  INFO 4028 --- [nio-8080-exec-1] c.e.demo.controllers.CartController      : Items added to Peter's cart successfully!
+2020-10-05 12:11:56.154  INFO 4028 --- [nio-8080-exec-2] c.e.demo.controllers.CartController      : Removing items from Peter's cart
+2020-10-05 12:11:56.159 ERROR 4028 --- [nio-8080-exec-2] c.e.demo.controllers.CartController      : RemoveFromCart Error! Item 15 could not be found.
+2020-10-05 12:12:03.882  INFO 4028 --- [nio-8080-exec-3] c.e.demo.controllers.CartController      : Removing items from Peter's cart
+2020-10-05 12:12:03.894  INFO 4028 --- [nio-8080-exec-3] c.e.demo.controllers.CartController      : Item 2 and quantity 2 removed from cart successfully!
+2020-10-05 12:12:18.834  INFO 4028 --- [nio-8080-exec-4] c.e.demo.controllers.OrderController     : Submitting order for Paul
+2020-10-05 12:12:18.845  INFO 4028 --- [nio-8080-exec-4] c.e.demo.controllers.OrderController     : Order for Paul submitted successfully!
+2020-10-05 12:12:31.413  INFO 4028 --- [nio-8080-exec-5] c.e.demo.controllers.OrderController     : Submitting order for Peter
+2020-10-05 12:12:31.424  INFO 4028 --- [nio-8080-exec-5] c.e.demo.controllers.OrderController     : Order for Peter submitted successfully!
