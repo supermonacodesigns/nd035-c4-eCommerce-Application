@@ -63,7 +63,7 @@ public class UserController {
 		}
 
 		else if(!createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword())) {
-			log.error("Error with creating user {}: 'Password' and 'Confirm Password field don't match!",createUserRequest.getUsername());
+			log.error("Error with creating user {}: 'Password' and 'Confirm Password' fields don't match!",createUserRequest.getUsername());
 			return ResponseEntity.badRequest().build();
 		}
 
